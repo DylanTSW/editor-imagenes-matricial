@@ -459,7 +459,9 @@ return resultado;
  */
 function voltearVertical(matriz) {
   // TODO: Implementar volteo vertical
-  
+  const resultado = copiarMatriz(matriz);
+return resultado.reverse();
+
   return []; // REEMPLAZAR
 }
 
