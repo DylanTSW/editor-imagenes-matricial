@@ -312,6 +312,20 @@ function ajustarBrillo(matriz, factor) {
   //   }
   // }
   
+  const resultado = copiarMatriz(matriz);
+
+
+for (let i = 0; i < resultado.length; i++) {
+for (let j = 0; j < resultado[i].length; j++) {
+resultado[i][j].r = limitarValorColor(matriz[i][j].r * factor);
+resultado[i][j].g = limitarValorColor(matriz[i][j].g * factor);
+resultado[i][j].b = limitarValorColor(matriz[i][j].b * factor);
+}
+}
+
+
+return resultado;
+
   return []; // REEMPLAZAR
 }
 
